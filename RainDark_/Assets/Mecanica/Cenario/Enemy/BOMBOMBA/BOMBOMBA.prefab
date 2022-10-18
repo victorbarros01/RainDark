@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 474938081541366892}
   m_Layer: 0
   m_Name: BOMBOMBA
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,6 +173,18 @@ MonoBehaviour:
   itens:
   - item: {fileID: 6233547585833243958, guid: b2fd9ebf0d89a954f82678da083008fd, type: 3}
     itemDropRate: 100
+    minDrop: 1
+    maxDrop: 1
+  - item: {fileID: 7388889212816381762, guid: 2c42fd52d0f8f4944a400469df56c932, type: 3}
+    itemDropRate: 30
+    minDrop: 1
+    maxDrop: 1
+  - item: {fileID: 8375737508767547797, guid: 6f2f7fead24273c48aa8012e05e5fa33, type: 3}
+    itemDropRate: 50
+    minDrop: 1
+    maxDrop: 1
+  - item: {fileID: 1230751425458980592, guid: 2bb37f3666464cc47a77345ae3953d40, type: 3}
+    itemDropRate: 40
     minDrop: 1
     maxDrop: 1
 --- !u!95 &474938081541366892
