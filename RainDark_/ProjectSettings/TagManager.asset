@@ -12,6 +12,7 @@ TagManager:
   - BulletPlayer2
   - BulletPlayerPU
   - Bolha
+  - Raio
   layers:
   - Default
   - TransparentFX
