@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 5697793175425534950}
   - component: {fileID: 5697793175425534951}
   - component: {fileID: 5697793175425534953}
-  - component: {fileID: 6853316505658518659}
+  - component: {fileID: 2863516000312219684}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -656,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kill: 279
+  Controller: {fileID: 2863516000312219684}
   speed: 35
   h: 0
   v: 0
@@ -665,8 +666,8 @@ MonoBehaviour:
   - {fileID: 5697793174105812346}
   PowerUp: {fileID: 9012709237616194300}
   Shield: {fileID: 5697793174188879887}
---- !u!135 &6853316505658518659
-SphereCollider:
+--- !u!143 &2863516000312219684
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -676,8 +677,13 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.82
-  m_Center: {x: -0.19, y: 0, z: 0}
+  m_Height: 2
+  m_Radius: 2.23
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: -0.2, y: 0, z: 0}
 --- !u!1001 &2703335375040478166
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ TagManager:
   - BulletPlayerPU
   - Bolha
   - Raio
+  - BulletEnemy
   layers:
   - Default
   - TransparentFX
