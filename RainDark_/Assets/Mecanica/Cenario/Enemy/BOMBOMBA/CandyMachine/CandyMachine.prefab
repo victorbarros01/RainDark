@@ -265,6 +265,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7144924026934803365}
+  - component: {fileID: 5872833406497601881}
+  - component: {fileID: 488169736269192301}
+  - component: {fileID: 1157427630321251584}
+  - component: {fileID: 5958209191520033426}
   m_Layer: 0
   m_Name: CandyMachine
   m_TagString: Untagged
@@ -281,7 +285,7 @@ Transform:
   m_GameObject: {fileID: 7524404610550358303}
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6553509, y: 1, z: 1}
   m_Children:
   - {fileID: 3701341703458300945}
   - {fileID: 7190893696037346891}
@@ -290,6 +294,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: 180, z: 0}
+--- !u!65 &5872833406497601881
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7524404610550358303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9533997, y: 6.766879, z: 2.92}
+  m_Center: {x: 0.616189, y: 0.9655142, z: 0}
+--- !u!114 &488169736269192301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7524404610550358303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3debae516a698d44a84bcb7794d8ec69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 5
+  sound: {fileID: 0}
+--- !u!65 &1157427630321251584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7524404610550358303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9533997, y: 6.766879, z: 2.92}
+  m_Center: {x: 0.616189, y: 0.9655142, z: 0}
+--- !u!114 &5958209191520033426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7524404610550358303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3debae516a698d44a84bcb7794d8ec69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 5
+  sound: {fileID: 0}
 --- !u!1 &7976641680633779413
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiro: {fileID: 29926506954042143, guid: d9b0c174f671cba459a2455ec379877b, type: 3}
   enableOnPlay: 1
-  delay: 1
+  delay: 1.5
   sound: {fileID: 8673541781190837329}
 --- !u!82 &8673541781190837329
 AudioSource:

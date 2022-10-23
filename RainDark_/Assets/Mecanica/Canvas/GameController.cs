@@ -30,4 +30,11 @@ public class GameController : MonoBehaviour
         txtLife.text = "Life: " + life;
     }
 
+    public void Life(){
+        if(life < 6) {
+            life += 1;
+            txtLife.text = "Life: " + life;
+        }
+    }
+
 }
