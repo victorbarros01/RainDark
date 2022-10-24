@@ -662,6 +662,13 @@ MonoBehaviour:
   DownRightLimit: {fileID: 0}
   UpLeftLimit: {fileID: 0}
   h: 0
+  vida:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   v: 0
   Guns:
   - {fileID: 5697793175424991612}

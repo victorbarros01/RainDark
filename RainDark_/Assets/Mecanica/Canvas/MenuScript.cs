@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
    public void MovCena(){
-       SceneManager.LoadScene("Jogo");
+       SceneManager.LoadScene("Controller");
    }
     public void SairJogo()
     {
