@@ -23,7 +23,7 @@ public class DefaultEnemy : MonoBehaviour
     }
 
 
-    void OnCollisionEnter(Collision other){
+    void OnTriggerEnter(Collider other){
 
         if (other.gameObject.CompareTag("BulletPlayerPU")){
             Destroy(other.gameObject);
