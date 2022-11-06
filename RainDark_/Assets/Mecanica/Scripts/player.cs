@@ -12,11 +12,11 @@ public class player : MonoBehaviour {
     public Transform DownRightLimit;
     public Transform UpLeftLimit;
     private bool AtvBolha;
-    private int life = 6;
+    public int life = 6;
     private int count = 3;
     int GunLevel = 0;
     public float h;
-    public GameObject[] vida;
+    public GameObject[] heartHUD = new GameObject[6];
     public float v;
     [SerializeField]
     private GameObject[] Guns;
@@ -36,6 +36,7 @@ public class player : MonoBehaviour {
         Shield.gameObject.SetActive(false);
         //definindo o bool AtvBolha como falso
         AtvBolha = false;
+
     }
 
 
@@ -71,7 +72,6 @@ public class player : MonoBehaviour {
        if((transform.position.x > DownRightLimit.position.x)&& h > 0)h = 0;
 
         v = Input.GetAxis("Vertical");
-
        if((transform.position.y < DownRightLimit.position.y)&& v < 0)v = 0;
        if((transform.position.y > UpLeftLimit.position.y)&& v > 0)v = 0;
 
@@ -102,42 +102,105 @@ public class player : MonoBehaviour {
            }
         }
 
+    void LifeMenosHUD(){
+
+    switch(life)
+    {
+
+        case 5:
+            heartHUD[5].SetActive(false);
+            break;
+
+        case 4:
+            heartHUD[5].SetActive(false);
+            heartHUD[4].SetActive(false);
+            break;
+
+        case 3:
+            heartHUD[5].SetActive(false);
+            heartHUD[4].SetActive(false);
+            heartHUD[3].SetActive(false);
+            break;
+
+        case 2:
+            heartHUD[5].SetActive(false);
+            heartHUD[4].SetActive(false);
+            heartHUD[3].SetActive(false);
+            heartHUD[2].SetActive(false);
+            break;
+
+        case 1:
+            heartHUD[5].SetActive(false);
+            heartHUD[4].SetActive(false);
+            heartHUD[3].SetActive(false);
+            heartHUD[2].SetActive(false);
+            heartHUD[1].SetActive(false);
+            break;
+    }
+}
+
+    void LifeMaisHUD(){
+
+        switch(life)
+        {
+            case 6:
+                heartHUD[5].SetActive(true);
+                break;
+
+            case 5:
+                heartHUD[4].SetActive(true);
+                break;
+
+            case 4:
+                heartHUD[3].SetActive(true);
+                break;
+
+            case 3:
+                heartHUD[2].SetActive(true);
+                break;
+
+            case 2:
+                heartHUD[1].SetActive(true);
+                break;
+
+            case 1:
+                heartHUD[0].SetActive(true);
+                break;
+        }
+    }
+
+    void MenosLife() {
+
+        if(life>0){
+            LifeMenosHUD();
+        }
+    }
+
+    void MaisLife() {
+            LifeMaisHUD();
+
+    }
 
         //Define parametros para colisão
-        void OnTriggerEnter(Collider other){
+        public void OnTriggerEnter(Collider other){
             if (other.gameObject.CompareTag("Enemy")&& AtvBolha == false){
                 life--;
-                Destroy(vida[5].gameObject);
-            if (vida[5].gameObject == null) Destroy(vida[4].gameObject);
-            if (vida[4].gameObject == null) Destroy(vida[3].gameObject);
-            if (vida[3].gameObject == null) Destroy(vida[2].gameObject);
-            if (vida[2].gameObject == null) Destroy(vida[1].gameObject);
-            if (vida[1].gameObject == null) Destroy(vida[0].gameObject);
-            Blink();
-                
+                MenosLife();
+                Blink();
             }
+
+
 
             if (other.gameObject.CompareTag("BulletEnemy")&& AtvBolha == false){
                 life-= 4;
-            Destroy(vida[5].gameObject);
-            Destroy(vida[4].gameObject);
-            Destroy(vida[3].gameObject);
-            Destroy(vida[2].gameObject);
-            if (vida[2].gameObject == null) Destroy(vida[1].gameObject);
-            if (vida[1].gameObject == null) Destroy(vida[0].gameObject);
+                MenosLife();
             Blink();
                 
             }
 
             if (other.gameObject.CompareTag("Raio")){
-
                 life-= 3;
-            Destroy(vida[5].gameObject);
-            Destroy(vida[4].gameObject);
-            Destroy(vida[3].gameObject);
-            if (vida[3].gameObject == null) Destroy(vida[1].gameObject);
-            if (vida[2].gameObject == null) Destroy(vida[1].gameObject);
-            if (vida[1].gameObject == null) Destroy(vida[0].gameObject);
+                MenosLife();
             Blink();
                 
 
@@ -170,9 +233,14 @@ public class player : MonoBehaviour {
                         break;
 
                     case Item.TYPES.LIFE:
-                        if (life < 6)life += 1;
+
+                            if(life<6) {
+                                life++;
+                                MaisLife();
+                            }
+
+
                         Destroy(other.gameObject);
-                        GameController.instance.Life();
                         break;
 
 
@@ -185,8 +253,7 @@ public class player : MonoBehaviour {
 
 
                 }
-
-
             }
         }
+
     }

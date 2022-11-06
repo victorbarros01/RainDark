@@ -18,7 +18,7 @@ public class TiroEnemy : MonoBehaviour
         transform.Translate(speed * Time.deltaTime,0 ,0 );
     }
 
-    void OnTriggerEnter(){
-
+    void OnTriggerEnter(Collider other){
+        if(other.gameObject.CompareTag("Bolha"))Destroy(gameObject);
     }
 }

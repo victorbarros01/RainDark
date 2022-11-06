@@ -661,8 +661,9 @@ MonoBehaviour:
   speed: 35
   DownRightLimit: {fileID: 0}
   UpLeftLimit: {fileID: 0}
+  life: 6
   h: 0
-  vida:
+  heartHUD:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -887,11 +888,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 121ce095ff6e7cf4f9e30ebcc398e60d, type: 3}
+--- !u!1 &4687181797388010273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017417377139146451, guid: 121ce095ff6e7cf4f9e30ebcc398e60d, type: 3}
+  m_PrefabInstance: {fileID: 5697793173637398002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3242282600385580778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7200207337270080280, guid: 121ce095ff6e7cf4f9e30ebcc398e60d, type: 3}
   m_PrefabInstance: {fileID: 5697793173637398002}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &239704957523778720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4687181797388010273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2eab2f35a2f7749b4d24259ecb2fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5697793175302953074
 PrefabInstance:
   m_ObjectHideFlags: 0
