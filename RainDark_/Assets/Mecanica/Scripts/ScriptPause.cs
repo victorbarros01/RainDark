@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ScriptMenu : MonoBehaviour
+
+public class ScriptPause : MonoBehaviour
 {
     public GameObject PausaMenu;
     public bool IsPaused;
@@ -26,33 +27,33 @@ public class ScriptMenu : MonoBehaviour
             }
             else
             {
-                PausaMenu();
+                PauseMenu();
             }
         }
     }
 
-    public void PausaMenu()
+    public void PauseMenu()
     {
         PausaMenu.SetActive(true);
-        Time.timescale = 0f;
+        Time.timeScale = 0f;
         IsPaused = true;
     }
        
     public void ResumirJogo()
     {
         PausaMenu.SetActive(false);
-        Time.timescale = 1f;
+        Time.timeScale = 1f;
         IsPaused = false;
     }
 
     public void MenuPrincipal()
     {
-        Time.TimeScale = 1f;
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Abertura");
     }
 
     public void Sair()
     {
-        Application.Sair();
+        Application.Quit();
     }
 }
