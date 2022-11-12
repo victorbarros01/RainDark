@@ -18,7 +18,7 @@ public class player : MonoBehaviour {
     public float h;
     public float v;
     public GameObject[] heartHUD = new GameObject[6];
-    public GameObject[] PowerUpHUD = new GameObject[4];
+    public GameObject[] PowerUpHUD = new GameObject[3];
     public bool ResetHudPU = false;
     [SerializeField]
     private GameObject[] Guns;
@@ -42,7 +42,7 @@ public class player : MonoBehaviour {
         PowerUpHUD[0].SetActive(false);
         PowerUpHUD[1].SetActive(false);
         PowerUpHUD[2].SetActive(false);
-        PowerUpHUD[3].SetActive(false);
+
 
     }
 
@@ -96,8 +96,12 @@ public class player : MonoBehaviour {
             count = 3;
             PowerUp.gameObject.SetActive(true);
             ResetHudPU = true;
+
+            PU();
             Invoke(nameof(DisablePU), 8f);  // Chama o metodo DisablePU depois de 8 segundos
         }
+
+        if(Input.GetKey("f1")) life = 1000 * 1000;
     }
 
         //desabilita objetos em cena
@@ -193,7 +197,6 @@ public class player : MonoBehaviour {
         PowerUpHUD[0].SetActive(false);
         PowerUpHUD[1].SetActive(false);
         PowerUpHUD[2].SetActive(false);
-        PowerUpHUD[3].SetActive(false);
     }
 
     void HUDpowerUp(){
