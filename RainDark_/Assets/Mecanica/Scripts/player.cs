@@ -16,8 +16,10 @@ public class player : MonoBehaviour {
     private int count = 3;
     int GunLevel = 0;
     public float h;
-    public GameObject[] heartHUD = new GameObject[6];
     public float v;
+    public GameObject[] heartHUD = new GameObject[6];
+    public GameObject[] PowerUpHUD = new GameObject[4];
+    public bool ResetHudPU = false;
     [SerializeField]
     private GameObject[] Guns;
     [SerializeField]
@@ -36,6 +38,11 @@ public class player : MonoBehaviour {
         Shield.gameObject.SetActive(false);
         //definindo o bool AtvBolha como falso
         AtvBolha = false;
+
+        PowerUpHUD[0].SetActive(false);
+        PowerUpHUD[1].SetActive(false);
+        PowerUpHUD[2].SetActive(false);
+        PowerUpHUD[3].SetActive(false);
 
     }
 
@@ -88,6 +95,7 @@ public class player : MonoBehaviour {
         if(Input.GetButtonDown("PowerUp")&& count <= 0){
             count = 3;
             PowerUp.gameObject.SetActive(true);
+            ResetHudPU = true;
             Invoke(nameof(DisablePU), 8f);  // Chama o metodo DisablePU depois de 8 segundos
         }
     }
@@ -181,6 +189,41 @@ public class player : MonoBehaviour {
 
     }
 
+    void DisableHUDPU(){
+        PowerUpHUD[0].SetActive(false);
+        PowerUpHUD[1].SetActive(false);
+        PowerUpHUD[2].SetActive(false);
+        PowerUpHUD[3].SetActive(false);
+    }
+
+    void HUDpowerUp(){
+        switch (count){
+            case 2:
+                PowerUpHUD[0].SetActive(true);
+                break;
+
+            case 1:
+                PowerUpHUD[1].SetActive(true);
+                break;
+
+            case 0:
+                PowerUpHUD[2].SetActive(true);
+                break;
+
+            default:
+                DisableHUDPU();
+                break;
+
+        }
+    }
+
+    void PU(){
+        if(count >= 0)HUDpowerUp();
+        if(ResetHudPU = true){
+            HUDpowerUp();
+        }
+    }
+
         //Define parametros para colisão
         public void OnTriggerEnter(Collider other){
             if (other.gameObject.CompareTag("Enemy")&& AtvBolha == false){
@@ -225,7 +268,7 @@ public class player : MonoBehaviour {
 
                     case Item.TYPES.POWERUP:
                             count--;
-
+                            PU();
                             Destroy(other.gameObject);
                             //Debug.Log("Nao");
                             if (count <= 0)count = 0;
