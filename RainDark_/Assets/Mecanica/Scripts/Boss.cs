@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     public int life;
     Blinking[] blink;
     private DropItem drop;
     [SerializeField]
     private AudioSource sound;
+    BossLife vida;
+
 
     void Start()
     {
         blink = gameObject.GetComponentsInChildren<Blinking>();
         drop = GetComponent<DropItem>();
+        vida = GameObject.FindObjectOfType<BossLife>(true);
+        vida.gameObject.SetActive(true);
+
     }
 
     void Blink(){
@@ -22,20 +27,10 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
     void OnTriggerEnter(Collider other){
-        if (other.gameObject.CompareTag("Bolha")){
-            life-= 10000;
-        }
-
-
-        if(other.gameObject.CompareTag("Player")){
-            GetComponent<Explosion>().Play();
-            Destroy(gameObject);
-            sound.Play();
-        }
 
         if (other.gameObject.CompareTag("BulletPlayerPU")){
-
             life -= 8;
             Blink();
 
@@ -57,11 +52,11 @@ public class Enemy : MonoBehaviour
         }
 
         if(life <= 0){
+            vida.LoseLife(1);
             GetComponent<Explosion>().Play();
             sound.Play();
             Destroy(gameObject);
-            drop.Drop();
+
         }
     }
-    
 }

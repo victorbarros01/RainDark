@@ -7,6 +7,7 @@ public class Torre : MonoBehaviour
     public bool enableOnPlay = false;
     public float delay;
     public AudioSource sound;
+    public Transform PaiDasBalas;
 
     // Start is called before the first frame update
         void Start()
@@ -28,7 +29,12 @@ public class Torre : MonoBehaviour
         }
 
         void Spawn(){
-            Instantiate(tiro, transform.position, transform.rotation);
+            if(PaiDasBalas != null) {
+                Instantiate(tiro, transform.position, transform.rotation, PaiDasBalas);
+            }else {
+                Instantiate(tiro, transform.position, transform.rotation);
+            }
             if (sound != null)sound.Play();
+
         }
 }

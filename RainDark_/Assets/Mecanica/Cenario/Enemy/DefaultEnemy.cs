@@ -26,7 +26,6 @@ public class DefaultEnemy : MonoBehaviour
     void OnTriggerEnter(Collider other){
 
         if (other.gameObject.CompareTag("BulletPlayerPU")){
-            Destroy(other.gameObject);
             life -= 8;
             Blink();
 

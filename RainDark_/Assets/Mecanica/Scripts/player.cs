@@ -17,6 +17,7 @@ public class player : MonoBehaviour {
     int GunLevel = 0;
     public float h;
     public float v;
+    float z;
     public GameObject[] heartHUD = new GameObject[6];
     public GameObject[] PowerUpHUD = new GameObject[3];
     public bool ResetHudPU = false;
@@ -38,7 +39,7 @@ public class player : MonoBehaviour {
         Shield.gameObject.SetActive(false);
         //definindo o bool AtvBolha como falso
         AtvBolha = false;
-
+        z = transform.position.z;
         PowerUpHUD[0].SetActive(false);
         PowerUpHUD[1].SetActive(false);
         PowerUpHUD[2].SetActive(false);
@@ -87,8 +88,10 @@ public class player : MonoBehaviour {
 
         Controller.Move(dir * speed * Time.deltaTime);
 
-        if (Input.GetKeyDown(kill)) {
-            life = 0;
+        transform.position = new Vector3(transform.position.x, transform.position.y, z);
+
+        if (Input.GetKey("f3")) {
+            count = 0;
 
         }
 
@@ -222,7 +225,7 @@ public class player : MonoBehaviour {
 
     void PU(){
         if(count >= 0)HUDpowerUp();
-        if(ResetHudPU = true){
+        if(ResetHudPU == true){
             HUDpowerUp();
         }
     }
@@ -242,6 +245,13 @@ public class player : MonoBehaviour {
                 MenosLife();
             Blink();
                 
+            }
+
+            if (other.gameObject.CompareTag("FinalBoss")&& AtvBolha == false){
+                life-= 6;
+                MenosLife();
+                Blink();
+
             }
 
             if (other.gameObject.CompareTag("Raio")){

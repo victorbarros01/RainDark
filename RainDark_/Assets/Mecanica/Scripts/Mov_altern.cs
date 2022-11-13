@@ -10,6 +10,11 @@ public class Mov_altern : MonoBehaviour
     public float speedY;
     public float amplitudeX;
     public float amplitudeY;
+    float z;
+
+    void Start(){
+        z = transform.position.z;
+    }
 
     void Update()
     {
@@ -17,5 +22,6 @@ public class Mov_altern : MonoBehaviour
         float y = Mathf.Sin(transform.position.x) * amplitudeY;
         Vector3 dir = new Vector3(x + speedX, y +speedY, 0);
         transform.position += dir * Time.deltaTime;
+        transform.position = new Vector3(transform.position.x, transform.position.y, z);
     }
 }

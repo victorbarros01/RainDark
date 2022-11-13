@@ -21,6 +21,10 @@ public class Gun : MonoBehaviour
     void Update()
     {   
          
+        if(GameObject.FindObjectOfType<ScriptPause>().IsPaused)
+        {
+            return;
+        }
         
         if(Input.GetButton("Fire1")&& Time.time > Ultimotiro ){
             Ultimotiro = Time.time + firerate;

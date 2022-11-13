@@ -15,6 +15,7 @@ TagManager:
   - Raio
   - BulletEnemy
   - BulletEnemy2
+  - FinalBoss
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,8 @@ public class GerenciadorTile : MonoBehaviour
     public int TilesPreBoss;
     public Transform UltimoTile;
     public Vector3 EspacamentoTiles;
+    public GameObject Boss;
+    bool atvBoss = false;
     bool SpawnarTiles = true;
     public static GerenciadorTile Instance;
 
@@ -30,7 +32,7 @@ public class GerenciadorTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Boss.SetActive(false);
     }
 
 
@@ -54,8 +56,15 @@ public class GerenciadorTile : MonoBehaviour
             else
             {
                 UltimoTile = Instantiate(BossTile, UltimoTile.position + EspacamentoTiles, UltimoTile.rotation).transform;
-                SpawnarTiles = false;
+                if(!atvBoss){
+                    Invoke(nameof(EnableBossaNova), 3.0f);
+                }
             }
         }
+    }
+
+    void EnableBossaNova(){
+        Boss.SetActive(true);
+        atvBoss = true;
     }
 }
