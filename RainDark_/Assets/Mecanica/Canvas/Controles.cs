@@ -12,6 +12,7 @@ public class Controles : MonoBehaviour
         }
     }
 
+
     public void MovCena()
     {
         SceneManager.LoadScene("Jogo");
