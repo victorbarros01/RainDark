@@ -25,7 +25,7 @@ public class Gun : MonoBehaviour
         {
             return;
         }
-        
+
         if(Input.GetButton("Fire1")&& Time.time > Ultimotiro ){
             Ultimotiro = Time.time + firerate;
             Instantiate(tiro, transform.position, transform.rotation);

@@ -247,6 +247,13 @@ public class player : MonoBehaviour {
                 
             }
 
+            if (other.gameObject.CompareTag("BulletEnemyToxic")&& AtvBolha == false){
+                life-= 3;
+                MenosLife();
+                Blink();
+
+            }
+
             if (other.gameObject.CompareTag("FinalBoss")&& AtvBolha == false){
                 life-= 6;
                 MenosLife();

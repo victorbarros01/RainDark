@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss3 : MonoBehaviour
 {
@@ -95,3 +96,4 @@ public class Boss3 : MonoBehaviour
         }
     }
 }
+

@@ -16,6 +16,7 @@ TagManager:
   - BulletEnemy
   - BulletEnemy2
   - FinalBoss
+  - BulletEnemyToxic
   layers:
   - Default
   - TransparentFX

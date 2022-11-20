@@ -15,6 +15,6 @@ public class LoadCena : MonoBehaviour
 
     public void MovCena()
     {
-        SceneManager.LoadScene("CenaLoad");
+        SceneManager.LoadScene("Fase2");
     }
 }
