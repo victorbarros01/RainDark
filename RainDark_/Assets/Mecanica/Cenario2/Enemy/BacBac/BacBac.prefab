@@ -203,7 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itens:
   - item: {fileID: 7782754014006247127, guid: 74ffbd331d6be9842837159bef24d60d, type: 3}
-    itemDropRate: 20
+    itemDropRate: 40
     minDrop: 1
     maxDrop: 1
   - item: {fileID: 7388889212816381762, guid: 91d33e9fc692fa44babda3e8d9477baf, type: 3}
@@ -211,7 +211,11 @@ MonoBehaviour:
     minDrop: 1
     maxDrop: 1
   - item: {fileID: 7977463211190254622, guid: 2deb890d03cce164ea25e3c8b4c4337d, type: 3}
-    itemDropRate: 10
+    itemDropRate: 40
+    minDrop: 1
+    maxDrop: 1
+  - item: {fileID: 6233547585833243958, guid: 2665e98cc759dce4bb3633d078e37248, type: 3}
+    itemDropRate: 30
     minDrop: 1
     maxDrop: 1
 --- !u!1001 &874864248506892650

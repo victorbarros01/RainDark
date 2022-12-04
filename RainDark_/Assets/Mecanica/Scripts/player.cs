@@ -28,7 +28,7 @@ public class player : MonoBehaviour {
     [SerializeField]
     private GameObject Shield;   // Bolha de Proteção 1
     Blinking[] blink;           // Mecanica de piscar ao receber dano
-
+    public float Over = 1;
 
     void Start() {
         //Atribuindo os componentes e componentes filhos da class Blinking para a variavel blink.
@@ -93,6 +93,14 @@ public class player : MonoBehaviour {
         if (Input.GetKey("f3")) {
             count = 0;
 
+        }
+
+        if(Input.GetKey("f12")){
+            SceneManager.LoadScene("Fase2");
+        }
+
+        if(Input.GetKey("f10")){
+            SceneManager.LoadScene("Fase3");
         }
 
         if(Input.GetButtonDown("PowerUp")&& count <= 0){
@@ -241,7 +249,7 @@ public class player : MonoBehaviour {
 
 
             if (other.gameObject.CompareTag("BulletEnemy")&& AtvBolha == false){
-                life-= 4;
+                life-= 2;
                 MenosLife();
             Blink();
                 
@@ -270,7 +278,19 @@ public class player : MonoBehaviour {
             }
 
             if (life <= 0) {
-                SceneManager.LoadScene("Game Over");
+                switch (Over) {
+                    case 1:
+                        SceneManager.LoadScene("Game Over");
+                        break;
+
+                    case 2:
+                        SceneManager.LoadScene("Game Over 2");
+                        break;
+
+                    case 3:
+                        SceneManager.LoadScene("Game Over 3");
+                        break;
+                }
 
             }
             if (other.gameObject.CompareTag("Item")) {

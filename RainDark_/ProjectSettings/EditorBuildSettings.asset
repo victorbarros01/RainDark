@@ -23,4 +23,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase2.unity
     guid: 9c4b8c88e58d4d843bd6837485b33d40
+  - enabled: 1
+    path: Assets/Scenes/Game Over 2.unity
+    guid: 640c84fcc0a0ca0489fd9ecfffaf586e
+  - enabled: 1
+    path: Assets/Scenes/CenaLoad2.unity
+    guid: f257330401a302a459befb3aee6433fe
+  - enabled: 1
+    path: Assets/Scenes/Fase3.unity
+    guid: 9f57d6a3f56bcd7479fb1741c5b0b74e
+  - enabled: 1
+    path: Assets/Scenes/Game Over 3.unity
+    guid: faf5a0a04ac00c147bddf9840982c44f
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: ef24952f167016d468cfd76bf4b71d55
   m_configObjects: {}

@@ -9,12 +9,18 @@ public class LoadCena : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            MovCena();
+            MovCena1();
+            MovCena2();
         }
     }
 
-    public void MovCena()
+    public void MovCena1()
     {
         SceneManager.LoadScene("Fase2");
+    }
+
+    public void MovCena2()
+    {
+        SceneManager.LoadScene("Fase3");
     }
 }

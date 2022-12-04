@@ -974,7 +974,7 @@ MonoBehaviour:
     minDrop: 1
     maxDrop: 1
   - item: {fileID: 7782754014006247127, guid: 74ffbd331d6be9842837159bef24d60d, type: 3}
-    itemDropRate: 30
+    itemDropRate: 60
     minDrop: 1
     maxDrop: 1
 --- !u!1 &6063270560523126151
@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiro: {fileID: 7463376422912063400, guid: e8cecb52b3030974b86d1e6fcf730d1b, type: 3}
   enableOnPlay: 1
-  delay: 0.3
+  delay: 0.8
   sound: {fileID: 5797375269913549009}
   PaiDasBalas: {fileID: 0}
 --- !u!1 &8389598638936856951

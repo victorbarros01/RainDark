@@ -801,7 +801,7 @@ MonoBehaviour:
     minDrop: 1
     maxDrop: 1
   - item: {fileID: 6233547585833243958, guid: 2665e98cc759dce4bb3633d078e37248, type: 3}
-    itemDropRate: 40
+    itemDropRate: 60
     minDrop: 1
     maxDrop: 1
 --- !u!1 &6294155207485719756
@@ -1116,13 +1116,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8715366039787008955}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.35, y: 0.88, z: -0.04688281}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6584137453905629507}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2204159251708485604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiro: {fileID: 7463376422912063400, guid: e8cecb52b3030974b86d1e6fcf730d1b, type: 3}
-  enableOnPlay: 0
+  enableOnPlay: 1
   delay: 1
   sound: {fileID: 3504727722837887988}
   PaiDasBalas: {fileID: 0}
