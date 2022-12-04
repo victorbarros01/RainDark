@@ -5328,7 +5328,7 @@ MonoBehaviour:
   - {fileID: 7046528268346061260, guid: 2743fa6dce179d441aceeca18993d0d6, type: 3}
   BossTile: {fileID: 8540313111786067168, guid: ddbd9abacbd1e694fa0ea9fa5758e126, type: 3}
   MaxTilesAtuais: 2
-  TilesPreBoss: 25
+  TilesPreBoss: 15
   UltimoTile: {fileID: 903729123}
   EspacamentoTiles: {x: 64.5, y: 0, z: 0}
   Boss: {fileID: 396696951}
