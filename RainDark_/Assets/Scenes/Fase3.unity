@@ -1999,7 +1999,7 @@ MonoBehaviour:
   - {fileID: 7046528268346061260, guid: 3558808c7b4019549b9bb659b3382aaa, type: 3}
   BossTile: {fileID: 8540313111786067168, guid: eed91f8acdad74c4abbf09b10cffb773, type: 3}
   MaxTilesAtuais: 2
-  TilesPreBoss: 10
+  TilesPreBoss: 15
   UltimoTile: {fileID: 220142799}
   EspacamentoTiles: {x: 64.5, y: 0, z: 0}
   Boss: {fileID: 570581054}

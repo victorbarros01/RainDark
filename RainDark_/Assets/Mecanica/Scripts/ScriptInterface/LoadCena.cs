@@ -10,7 +10,7 @@ public class LoadCena : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             MovCena1();
-            MovCena2();
+            
         }
     }
 
@@ -22,5 +22,10 @@ public class LoadCena : MonoBehaviour
     public void MovCena2()
     {
         SceneManager.LoadScene("Fase3");
+    }
+
+    public void MovCena3()
+    {
+        SceneManager.LoadScene("Creditos");
     }
 }

@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 960666170}
         m_TargetAssemblyTypeName: LoadCena, Assembly-CSharp
-        m_MethodName: MovCena2
+        m_MethodName: MovCena3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -597,8 +597,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -131.56317}
-  m_SizeDelta: {x: -1319.092, y: -728.661}
+  m_AnchoredPosition: {x: 0, y: -123.997}
+  m_SizeDelta: {x: -1319.092, y: -743.794}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664974649
 MonoBehaviour:
@@ -937,7 +937,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 960666170}
         m_TargetAssemblyTypeName: LoadCena, Assembly-CSharp
-        m_MethodName: MovCena2
+        m_MethodName: MovCena3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
