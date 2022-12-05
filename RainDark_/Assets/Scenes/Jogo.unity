@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2336,7 +2336,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1701147671}
         m_TargetAssemblyTypeName: Audio, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -4475,9 +4475,7 @@ PrefabInstance:
       objectReference: {fileID: 1682855231}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_text
-      value: 'Gummy Bear
-
-'
+      value: GUMMY BEAR
       objectReference: {fileID: 0}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_fontSize
@@ -4486,6 +4484,10 @@ PrefabInstance:
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_margin.z
       value: 0.00009153302
+      objectReference: {fileID: 0}
+    - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_fontColor.b
@@ -4621,19 +4623,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5295960928629939715, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 145.497
+      value: 396.7028
       objectReference: {fileID: 0}
     - target: {fileID: 5295960928629939715, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 45.551
+      value: 51.7645
       objectReference: {fileID: 0}
     - target: {fileID: 5295960928629939715, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.149
+      value: -0.00000095367
       objectReference: {fileID: 0}
     - target: {fileID: 5295960928629939715, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 88.776
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 6200896694143433876, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4642,6 +4644,10 @@ PrefabInstance:
     - target: {fileID: 6200896694143433876, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155140451545599762, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1108236754430586572, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}

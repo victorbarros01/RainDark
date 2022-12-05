@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1096,6 +1096,7 @@ GameObject:
   - component: {fileID: 287538986}
   - component: {fileID: 287538985}
   - component: {fileID: 287538984}
+  - component: {fileID: 287538989}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -1167,7 +1168,7 @@ MonoBehaviour:
   MaxTilesAtuais: 2
   TilesPreBoss: 15
   UltimoTile: {fileID: 2029425014}
-  EspacamentoTiles: {x: 64.5, y: 0, z: 0}
+  EspacamentoTiles: {x: 63.8, y: 0, z: 0}
   Boss: {fileID: 95519260}
 --- !u!4 &287538988
 Transform:
@@ -1183,6 +1184,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &287538989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287538983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4ad8acc116cbe48b0262c02cef84e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &287727324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2190,7 +2203,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1809179692}
         m_TargetAssemblyTypeName: Audio, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -3160,7 +3173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4637244779737759150, guid: aba75bb1d779ed74c9c3a9640a845b36, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5409136660430317332, guid: aba75bb1d779ed74c9c3a9640a845b36, type: 3}
       propertyPath: m_RootOrder
@@ -3988,7 +4001,7 @@ PrefabInstance:
       objectReference: {fileID: 1459438278}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_text
-      value: "Xam\xE3\n\n"
+      value: "XAM\xC3\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_fontSize
@@ -3999,24 +4012,44 @@ PrefabInstance:
       value: 0.00009153302
       objectReference: {fileID: 0}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_fontColor.g
-      value: 1
+      value: 0.93989503
       objectReference: {fileID: 0}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.9394522
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_fontSizeBase
       value: 50.53
       objectReference: {fileID: 0}
     - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278255600
+      value: 4278251775
+      objectReference: {fileID: 0}
+    - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 767161635535709152, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1108236754430586572, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: healthBar
@@ -4132,7 +4165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5295960928629939715, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 145.497
+      value: 155.8593
       objectReference: {fileID: 0}
     - target: {fileID: 5295960928629939715, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4140,11 +4173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5295960928629939715, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.149
+      value: 0.000041008
       objectReference: {fileID: 0}
     - target: {fileID: 5295960928629939715, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 88.776
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 6200896694143433876, guid: f373f50c87af5854eb8ed40e48c65212, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5447,7 +5480,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.463
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
