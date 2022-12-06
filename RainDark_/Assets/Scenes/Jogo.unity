@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2256,6 +2256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 740731515}
   - component: {fileID: 740731516}
+  - component: {fileID: 740731517}
   m_Layer: 5
   m_Name: BotaoVolume
   m_TagString: Untagged
@@ -2348,6 +2349,47 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &740731517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740731514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e8139c392bdc7448d0612224fc1aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1701147671}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: GetVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  runAmount: -1
+  runOnAwake: 0
+  runOnEnable: 1
+  runOnStart: 0
+  runOnUpdate: 0
+  runOnFixedUpdate: 0
+  runOnCollisionEnter: 0
+  runOnCollisionStay: 0
+  runOnCollisionExit: 0
+  runOnTriggerEnter: 0
+  runOnTriggerStay: 0
+  runOnTriggerExit: 0
+  runOnDisable: 0
+  runOnDestroy: 0
 --- !u!1 &762974315
 GameObject:
   m_ObjectHideFlags: 0
@@ -4888,6 +4930,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 24100000, guid: dad9cc635e8b01148a6b8a76de0a605d, type: 2}
+  VolumePName: Volume
+  VolumeSlider: {fileID: 740731516}
 --- !u!1 &1727188318
 GameObject:
   m_ObjectHideFlags: 0
@@ -5640,6 +5684,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 396696954, guid: e6cd513a2be5ccc4d9c84b0e683ff143, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: dad9cc635e8b01148a6b8a76de0a605d, type: 2}
     - target: {fileID: 557751928, guid: e6cd513a2be5ccc4d9c84b0e683ff143, type: 3}
       propertyPath: m_IsActive
       value: 1

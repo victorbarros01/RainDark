@@ -90,16 +90,16 @@ public class player : MonoBehaviour {
 
         transform.position = new Vector3(transform.position.x, transform.position.y, z);
 
-        if (Input.GetKey("f3")) {
+        if (Input.GetKey("f4")) {
             count = 0;
 
         }
 
-        if(Input.GetKey("f12")){
+        if(Input.GetKey("f2")){
             SceneManager.LoadScene("Fase2");
         }
 
-        if(Input.GetKey("f10")){
+        if(Input.GetKey("f3")){
             SceneManager.LoadScene("Fase3");
         }
 

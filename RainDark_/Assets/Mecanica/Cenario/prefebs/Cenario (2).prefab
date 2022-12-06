@@ -4893,7 +4893,7 @@ AudioSource:
   m_GameObject: {fileID: 3519910924180014898}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: dad9cc635e8b01148a6b8a76de0a605d, type: 2}
   m_audioClip: {fileID: 8300000, guid: e0e1ba8d4773fb948a0a171dcafac4f7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -10287,20 +10287,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 475606402290045709, guid: 8c4a56bdb984b7e468fc149a066c7740, type: 3}
   m_PrefabInstance: {fileID: 1700267095}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6378602583931537347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995965310191144416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde6e1c232544fb40a3b59dde3f72e9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dir: {x: -1, y: 0, z: 0}
-  speed: 3
 --- !u!114 &1033059219046184900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10317,6 +10303,20 @@ MonoBehaviour:
   speedY: 0
   amplitudeX: 0
   amplitudeY: 2
+--- !u!114 &6378602583931537347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995965310191144416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde6e1c232544fb40a3b59dde3f72e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dir: {x: -1, y: 0, z: 0}
+  speed: 3
 --- !u!1001 &1800672949109608275
 PrefabInstance:
   m_ObjectHideFlags: 0

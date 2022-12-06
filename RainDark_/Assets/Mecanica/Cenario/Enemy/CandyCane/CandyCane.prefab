@@ -118,6 +118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bengala doce
       objectReference: {fileID: 0}
+    - target: {fileID: 1945299852784712510, guid: b56cd00538c318e4eb286c852bfb3d24, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: dad9cc635e8b01148a6b8a76de0a605d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b56cd00538c318e4eb286c852bfb3d24, type: 3}
 --- !u!4 &5820434023489302983 stripped
